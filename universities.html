@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universities | UniSelect</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-graduation-cap"></i>
+                    ApplyRight
+                </a>
+                <ul class="nav-links">
+                    <li><a href="Main.html">Home</a></li>
+                    <li><a href="universities.html">Universities</a></li>
+                    <li><a href="recommendations.html">Recommendations</a></li>
+                    <li><a href="admission-resources.html">Admission Resources</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="auth-buttons">
+                    <a href="login.html" class="rounded-login-btn">Login</a>
+ 
+ 
+                     <a href="register.html" class="btn btn-primary">Register</a>
+                 </div>
+                <div class="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main class="universities-page">
+        <div class="container">
+            <!-- Search Filters -->
+            <div class="filters">
+                <div class="filter-group">
+                    <label for="program-filter">Program</label>
+                    <select id="program-filter">
+                        <option value="">All Programs</option>
+                        <option value="engineering">Engineering</option>
+                        <option value="business">Business</option>
+                        <option value="medicine">Medicine</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="location-filter">Location</label>
+                    <select id="location-filter">
+                        <option value="">All Locations</option>
+                        <option value="karachi">Karachi</option>
+                        <option value="lahore">Lahore</option>
+                        <option value="islamabad">Islamabad</option>
+                    </select>
+                </div>
+                <button class="apply-filters">Apply Filters</button>
+            </div>
+
+            <!-- Universities List -->
+            <div class="universities-list" id="universities-container">
+                <!-- Data will be loaded here via JavaScript -->
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>ApplyRight</h4>
+                    <p>Your gateway to higher education</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect With Us</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 UniSelect. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="universities.js">
+        
+    </script>
+</body>
+</html>

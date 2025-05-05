@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Resources | UniSelect</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="Main.html" class="logo">
+                    <i class="fas fa-graduation-cap"></i>
+                    ApplyRight
+                </a>
+                <ul class="nav-links">
+                    <li><a href="Main.html">Home</a></li>
+                    <li><a href="universities.html">Universities</a></li>
+                    <li><a href="recommendations.html">Recommendations</a></li>
+                    <li><a href="admission-resources.html">Admission Resources</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="auth-buttons">
+                   <a href="login.html" class="rounded-login-btn">Login</a>
+
+
+                    <a href="register.html" class="btn btn-primary">Register</a>
+                </div>
+                <div class="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main class="admission-resources">
+        <div class="container">
+            <h1>Admission Resources</h1>
+            <p class="subtitle">Everything you need to prepare for university admissions</p>
+            
+            <!-- Resource Categories -->
+            <div class="resource-categories">
+                <div class="category-card" onclick="showResources('test-prep')">
+                    <i class="fas fa-book-open"></i>
+                    <h3>Test Preparation</h3>
+                </div>
+                <div class="category-card" onclick="showResources('application-guides')">
+                    <i class="fas fa-file-alt"></i>
+                    <h3>Application Guides</h3>
+                </div>
+                <div class="category-card" onclick="showResources('sample-papers')">
+                    <i class="fas fa-file-pdf"></i>
+                    <h3>Sample Papers</h3>
+                </div>
+                <div class="category-card" onclick="showResources('interview-tips')">
+                    <i class="fas fa-comments"></i>
+                    <h3>Interview Tips</h3>
+                </div>
+            </div>
+
+            <!-- Resources Container -->
+            <div class="resources-container" id="resources-container">
+                <!-- Content will be loaded here dynamically -->
+                <div class="default-message">
+                    <i class="fas fa-arrow-up"></i>
+                    <p>Select a category above to view resources</p>
+                </div>
+            </div>
+
+            <!-- Upcoming Tests Section -->
+            <div class="upcoming-tests">
+                <h2><i class="fas fa-calendar-alt"></i> Upcoming Admission Tests</h2>
+                <div class="tests-timeline">
+                    <div class="test-event">
+                        <div class="test-date">
+                            <span class="day">15</span>
+                            <span class="month">Oct</span>
+                        </div>
+                        <div class="test-info">
+                            <h3>SAT Test Date</h3>
+                            <p>Registration Deadline: October 1</p>
+                            <a href="#" class="btn-outline">Register Now</a>
+                        </div>
+                    </div>
+                    <div class="test-event">
+                        <div class="test-date">
+                            <span class="day">05</span>
+                            <span class="month">Nov</span>
+                        </div>
+                        <div class="test-info">
+                            <h3>LUMS Admission Test</h3>
+                            <p>Registration Deadline: October 20</p>
+                            <a href="#" class="btn-outline">Register Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>ApplyRight</h4>
+                    <p>Your gateway to higher education</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect With Us</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 UniSelect. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="admission-resources.js"></script>
+</body>
+</html>

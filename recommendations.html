@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recommendations | UniSelect</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="Main.html" class="logo">
+                    <i class="fas fa-graduation-cap"></i>
+                    ApplyRight
+                </a>
+                <ul class="nav-links">
+                    <li><a href="Main.html">Home</a></li>
+                    <li><a href="universities.html">Universities</a></li>
+                    <li><a href="recommendations.html">Recommendations</a></li>
+                    <li><a href="admission-resources.html">Admission Resources</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="auth-buttons">
+                    <a href="login.html" class="rounded-login-btn">Login</a>
+ 
+ 
+                     <a href="register.html" class="btn btn-primary">Register</a>
+                 </div>
+                <div class="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main class="recommendation-page">
+        <div class="container">
+            <h1>Get Personalized Recommendations</h1>
+            
+            <!-- Recommendation Form -->
+            <div class="recommendation-form">
+                <div class="form-group">
+                    <label for="grades">Your Grades (Percentage/GPA)</label>
+                    <input type="number" id="grades" placeholder="e.g. 85% or 3.5" min="0" max="100" step="0.1">
+                </div>
+
+                <div class="form-group">
+                    <label for="program">Preferred Program</label>
+                    <select id="program">
+                        <option value="">Any Program</option>
+                        <option value="engineering">Engineering</option>
+                        <option value="business">Business</option>
+                        <option value="medicine">Medicine</option>
+                        <option value="arts">Arts & Humanities</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="budget">Budget Range (PKR/semester)</label>
+                    <select id="budget">
+                        <option value="">Any Budget</option>
+                        <option value="50000">Under 50,000</option>
+                        <option value="100000">50,000 - 100,000</option>
+                        <option value="200000">100,000 - 200,000</option>
+                        <option value="200001">Above 200,000</option>
+                    </select>
+                </div>
+
+                <button id="get-recommendations" class="btn-primary">Find My Matches</button>
+            </div>
+
+            <!-- Results Section -->
+            <div class="results-section" id="results">
+                <h2>Recommended Universities</h2>
+                <div class="recommendations-grid" id="recommendations-container">
+                    <!-- Results will appear here -->
+                </div>
+            </div>
+
+            <!-- Fallback Section -->
+            <div class="fallback-section" id="fallback">
+                <div class="fallback-content">
+                    <i class="fas fa-search fa-3x"></i>
+                    <h3>Tell us about your academic profile</h3>
+                    <p>We'll suggest universities that match your grades and preferences</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>ApplyRight</h4>
+                    <p>Your gateway to higher education</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect With Us</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 UniSelect. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="recommendation.js"></script>
+</body>
+</html>
